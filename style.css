@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+h1 {
+    font-size: 78px;
+    font-weight: 400;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;    
+    text-align: center;
+    color: white ;
+    background-color: #005B9A;
+       
+}
+
+.button-text {
+    background-color: #0191C8;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    height: 40px;
+    min-width: 200px;
+}
+
+
+.buttonDelete {
+    background-color: #0191C8;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    height: 40px;
+    min-width: 200px;
+    margin-right: 0 ;
+}
