@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tasks</title>
-   
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
@@ -17,9 +17,11 @@
   <body>
     <div class="header-logo shadow p-3 mb-5 bg-white rounded">
       <h1 class="header">TASK TO DO !</h1>
+      
     </div>
 
     <div class="container mt-5 w-75">
+      <p id="message"></p>
       <div class="input-group">
         <span class="button-text input-group-text">Adauga un nou task !</span>
         <input
@@ -28,17 +30,43 @@
           class="form-control"
           placeholder="Descrie activitatile tale !"
         />
-        <button class="button-text btn btn-primary" id="btnSubmit">Posteaza!</button>
+        <button class="button-text btn btn-primary" id="btnSubmit">
+          Posteaza!
+        </button>
       </div>
 
-      <p id="message"></p>
-
-      <div id="tasks"></div>
+      <div id="tasks" type="text"></div>
 
       <button class="button-text btn btn-danger btn-block mt-3" id="btnClear">
         Sterge lista !
       </button>
-      
+
+      <div class="d-flex bd-highlight mt-5 mx-auto ">
+        <div class="btnAlign p-2 flex-fill bd-highlight">
+          <button
+            class="p-2 flex-fill bd-highlight button-text btn btn-secondary"
+            id="btnParticipant1"
+            onclick="mixTasks(1, 'rezult')">Participant 1</button>
+          <div class="p-2 flex-fill bd-highlight" id="rezult"></div>
+        </div>
+
+        <div class="btnAlign p-2 flex-fill bd-highlight">
+          <button
+            class="p-2 flex-fill bd-highlight button-text btn btn-secondary"
+            id="btnParticipant1"
+            onclick="mixTasks(1, 'rezult1')">Participant 2</button>
+          <div class="p-2 flex-fill bd-highlight" id="rezult1"></div>
+        </div>
+
+        <div class="btnAlign p-2 flex-fill bd-highlight">
+          <button
+            class="p-2 flex-fill bd-highlight button-text btn btn-secondary"
+            id="btnParticipant1"
+            onclick="mixTasks(1, 'rezult2')">Participant 3</button>
+          <div class="p-2 flex-fill bd-highlight" id="rezult2"></div>
+        </div>
+    </div>
+
     <script src="app.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

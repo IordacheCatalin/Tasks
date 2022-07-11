@@ -1,39 +1,59 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 body {
-    max-width: 1024px;
-    margin: 0 auto;
+  max-width: 1024px;
+  margin: 0 auto;
 }
 h1 {
-    font-size: 78px;
-    font-weight: 400;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;    
-    text-align: center;
-    color: white ;
-    background-color: #005B9A;
-       
+  font-size: 100px;
+  font-weight: 400;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-align: center;
+  color: white;
+  background-color: #005b9a;
 }
 
 .button-text {
-    background-color: #0191C8;
-    color: white;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: 400;
-    font-size: 17px;
-    height: 40px;
-    min-width: 200px;
+  background-color: #0191c8;
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  height: 40px;
+  min-width: 200px;
 }
 
-
 .buttonDelete {
-    background-color: #0191C8;
-    color: white;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: 400;
-    font-size: 17px;
-    height: 40px;
-    min-width: 200px;
-    margin-right: 0 ;
+  background-color: #0191c8;
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  height: 40px;
+  min-width: 200px;
+  margin-right: 0;
+}
+
+p {
+  text-align-last: center;
+  font-weight: 400;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: red;
+  font-size: 36px;
+  margin-bottom: 48px;
+  font-style: oblique;
+  text-decoration: underline;
+  text-shadow: 1.5px 1.5px gray;
+}
+
+.btnAlign {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
