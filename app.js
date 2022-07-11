@@ -17,7 +17,7 @@ function addTask() {
       `<div class="d-flex bd-highligh">
        <div class="lista liste mt-3 list-group-item list-group-item-primary p-2 flex-grow-1 bd-highlight">` +
       newTask.value +
-      `</div><button class="lista buttonDelete bd-highlight mt-3" onclick="Delete(this,'` +
+      `</div><button class="lista buttonDelete btn btn-danger mt-3" onclick="Delete(this,'` +
       newTask.value +
       `');">Delete</button></div>`;
     newTask.value = "";
