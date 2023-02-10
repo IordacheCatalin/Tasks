@@ -18,8 +18,7 @@ function addTask() {
        <div class="lista liste mt-3 list-group-item list-group-item-primary p-2 flex-grow-1 bd-highlight">` +
       newTask.value +
       `</div><button class="lista buttonDelete btn btn-danger mt-3" onclick="Delete(this,'` +
-      newTask.value +
-      `');">Delete</button></div>`;
+      newTask.value + `');">Delete</button></div>`;
     newTask.value = "";
     displayMessage("Azi chiar am ceva de facut!");
   } else {
@@ -72,6 +71,7 @@ function mixTasks(num, showRezultId) {
   document.getElementById(showRezultId).style.display = "block"; //insert text in div
 
   const shuffled = [...list].sort(() => 0.5 - Math.random()); // random mix
+
 
   let x = shuffled.slice(0, num);
   document.getElementById(showRezultId).innerHTML = x;
