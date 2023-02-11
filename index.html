@@ -23,15 +23,15 @@
     <div class="container mt-5 w-75">
       <p id="message"></p>
       <div class="input-group">
-        <span class="button-text input-group-text">Adauga un nou task !</span>
+        <span class="button-text input-group-text">Please write a task</span>
         <input
           id="newTask"
           type="text"
           class="form-control"
-          placeholder="Descrie activitatile tale !"
+          placeholder="Task to do !"
         />
         <button class="button-text btn btn-primary" id="btnSubmit">
-          Posteaza!
+          Add new task
         </button>
       </div>
 
@@ -41,12 +41,17 @@
         Sterge lista !
       </button>
 
-      <div class="d-flex bd-highlight mt-5 mx-auto ">
+      <button class="button-text btn btn-block mt-5 mixWorkersBar">
+       Distribute work randomly to workers 
+      </button>
+
+      
+      <div class="d-flex bd-highlight mt-4 mx-auto ">
         <div class="btnAlign p-2 flex-fill bd-highlight">
           <button
             class="p-2 flex-fill bd-highlight button-text btn btn-secondary"
             id="btnParticipant1"
-            onclick="mixTasks(1, 'rezult')">Participant 1</button>
+            onclick="mixTasks(1, 'rezult')">Employee 1</button>
           <div class="p-2 flex-fill bd-highlight" id="rezult"></div>
         </div>
 
@@ -54,7 +59,7 @@
           <button
             class="p-2 flex-fill bd-highlight button-text btn btn-secondary"
             id="btnParticipant1"
-            onclick="mixTasks(1, 'rezult1')">Participant 2</button>
+            onclick="mixTasks(1, 'rezult1')">Employee 2</button>
           <div class="p-2 flex-fill bd-highlight" id="rezult1"></div>
         </div>
 
@@ -62,7 +67,7 @@
           <button
             class="p-2 flex-fill bd-highlight button-text btn btn-secondary"
             id="btnParticipant1"
-            onclick="mixTasks(1, 'rezult2')">Participant 3</button>
+            onclick="mixTasks(1, 'rezult2')">Employee 3</button>
           <div class="p-2 flex-fill bd-highlight" id="rezult2"></div>
         </div>
     </div>

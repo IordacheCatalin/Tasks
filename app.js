@@ -5,7 +5,7 @@ const messageDisplay = document.getElementById("message");
 submitButton.addEventListener("click", addTask);
 tasks.addEventListener("click", handleTaskClick);
 
-displayMessage("Azi am sa nu ceva de facut ?");
+displayMessage("I won't have anything to do today?");
 
 const newTask = document.getElementById("newTask");
 const rezult1 = document.getElementById("rezult1");
@@ -20,9 +20,9 @@ function addTask() {
       `</div><button class="lista buttonDelete btn btn-danger mt-3" onclick="Delete(this,'` +
       newTask.value + `');">Delete</button></div>`;
     newTask.value = "";
-    displayMessage("Azi chiar am ceva de facut!");
+    displayMessage("I really have something to do today !");
   } else {
-    displayMessage("Te rugam completeaza spatiul gol !");
+    displayMessage("Please complete with your activity !");
   }
 }
 
